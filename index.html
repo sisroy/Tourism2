@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism</title>
+    <link rel="icon" href="OIP.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Dancing Script');
+        *
+        {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+
+        }
+        body{
+           
+            font-family: 'Arial',sans-serif;
+            background-color: rgb(232, 237, 237);
+        }
+        header{
+            background-image: url("header.jpg");
+           
+            height: 24rem;
+            
+            text-align: center;
+          
+           
+            font-family:Dancing Script;           
+        }
+        header h1
+        {
+            background: -webkit-linear-gradient(#FF671F,#046A38);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size:3.5rem;
+        }
+        h1,h3{
+            text-align: center;
+            font-family:Dancing Script;
+            background: -webkit-linear-gradient(#FF671F,#046A38);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size:3.5rem;
+        }
+        h5{
+            text-align: center;
+            font-family:Dancing Script;
+            background: -webkit-linear-gradient(#fff41f,#046a3c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size:3.5rem;
+        }
+        nav {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        section {
+            padding: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+        }
+        marquee {
+        background-color: #0798e7;
+        color: #e8d9ea;
+        padding: 10px;
+        font-size: 18px;
+        font-weight: bold;
+        border: 2px solid #08ea9bf5;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(234, 14, 14, 0.1);
+        width: 100%; 
+        margin: 0px auto; 
+    }    
+        /*card image*/
+    .image-card {
+            margin-bottom: 20px;
+        }
+
+        .image-card img {
+            width: 100%;
+            height: auto;
+        }
+        .card-body {
+            text-align: center;
+        }
+        .image-card:hover {
+        filter: brightness(90%);
+    }
+    .cultural-info {
+            text-align: center;
+            padding: 20px;
+        }
+        .cultural-info img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .cultural-info h2 {
+            color: #333;
+        }
+        .cultural-info p {
+            color: #666;
+        }
+    /* Feedback */
+    .feedback-form {
+            width: 60%; 
+            margin: 20px auto;
+            background-color: #08ea9bf5;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .feedback-form label {
+            font-weight: bold;
+        }
+
+        .feedback-form textarea {
+            width: 100%;
+            height: 100px;
+            resize: vertical; 
+        }
+
+        .feedback-form button {
+            background-color: #cb2222;
+            color: #eaf2f3;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        .feedback-form button:hover {
+            background-color: #555;
+        }
+        footer {
+  background-color: #343a40;
+  color: #fff;
+  padding: 50px 0;
+}
+
+footer h4 {
+  color: #ffc107;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+footer iframe {
+  border: none;
+}
+
+footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+footer ul li a {
+  color: #ffc107;
+  text-decoration: none;
+}
+
+footer .col-md-4 a {
+  display: block;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  footer .col-md-4 {
+    margin-bottom: 30px;
+  }
+}
+
+footer .map-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+footer .map-container iframe {
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Explore the Wonders of India </h1>
+    </header>
+    <nav>
+        <a href="aboutus.html" >About Us</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="https://www.bing.com/ck/a?!&&p=46223e94da0a8bafJmltdHM9MTcwNzM1MDQwMCZpZ3VpZD0wM2IxNzA5Ny05YjQyLTZlYTQtMjJlOC02MmQzOWFlYTZmODAmaW5zaWQ9NTIxOA&ptn=3&ver=2&hsh=3&fclid=03b17097-9b42-6ea4-22e8-62d39aea6f80&psq=irctc&u=a1aHR0cDovL3d3dy5pcmN0Yy5jby5pbi8&ntb=1">Irctc</a>
+        <a href="https://www.bing.com/ck/a?!&&p=f4e2f6db143bb849JmltdHM9MTcwNzM1MDQwMCZpZ3VpZD0wM2IxNzA5Ny05YjQyLTZlYTQtMjJlOC02MmQzOWFlYTZmODAmaW5zaWQ9NTI4MQ&ptn=3&ver=2&hsh=3&fclid=03b17097-9b42-6ea4-22e8-62d39aea6f80&psq=flight&u=a1aHR0cHM6Ly93d3cueWF0cmEuY29tL2ZsaWdodHM&ntb=1">Flight</a>
+        <a href="https://www.bing.com/aclk?ld=e8c_lssWQJBTXhHz6n59VqSjVUCUy2mORSIEalmRAb_Pdr56WXRSHUbNJ242PfZlEqcBG7kXn1A89L7n5KyoAmwqbvniEyQW9mcaMrPEvZ82HUx1BpYYlhHh-XhWUxdAFvIHG7ECzVtve9dCx-v683ow3Vh0rtEb5zAtjuZhU9NJpOOMsrZI8mp4v6U1WpBM-XBUrQKg&u=aHR0cCUzYSUyZiUyZnd3dy5ib29raW5nLmNvbSUyZmluZGV4LmVuLmh0bWwlM2ZhaWQlM2QzOTM2NTUlMjZsYWJlbCUzZG1zbi11enVyOEpMd2dZbmU5TlBqKnExeXZBLTgwMzMzMTg1ODc2MDQyJTNhdGlrd2QtMTY2NTkxMjExODElM2Fsb2MtOTAlM2FuZW8lM2FtdGUlM2FscDE1NjMxNCUzYWRlYyUzYXFzaG90ZWwlMjZ1dG1fY2FtcGFpZ24lM2RFbmdsaXNoJTI1MjBFTiUyNTIwUk9XLUNBVVMlMjZ1dG1fbWVkaXVtJTNkY3BjJTI2dXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fdGVybSUzZHV6dXI4Skx3Z1luZTlOUGoqcTF5dkElMjZtc2Nsa2lkJTNkOWM5OGI2NDIxOTBmMTkzNDE3OTFkMzg3ZGNkZWYwZWE&rlid=9c98b642190f19341791d387dcdef0ea&ntb=1">Hotel</a>
+        <a href="aboutme.html">About Me</a>
+        
+    </nav>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="Temple_somnath.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="statue of unity.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="Kajiranga.jpg" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="thikse monastery-leh-J&K-1B8A0107.jpeg" alt="Fourth slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="dawki-Jaintia hills-meghalaya.jpg" alt="Fifth slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="bihar.jpg" alt="Sixth slide">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+   
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <marquee behavior="scroll" direction="left" scrollamount="5">
+        India offers a diverse range of tourist destinations including historical monuments, beautiful landscapes, vibrant cultures, and delicious cuisine.
+        Some popular destinations include the Taj Mahal in Agra, Jaipur's Amber Fort, Kerala's backwaters, Goa's beaches, and the spiritual city of Varanasi.
+    </marquee>
+    <h1>
+        Must Visit Destinations.
+    </h1>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card image-card">
+                        <img src="gaya.jpg" class="card-img-top" alt="Image 1">
+                        <div class="card-body">
+                            <h4>1.Gaya's Mahabodhi Temple, Bihar:</h4>
+                            <p class="card-text">Gaya, located in Bihar, is a sacred city revered by Buddhists for its association with Gautama Buddha. Visit the Mahabodhi Temple, a UNESCO World Heritage Site, where Buddha attained enlightenment. Experience spiritual serenity amidst ancient stupas and the Bodhi tree.</p>
+                            <a href="https://www.bing.com/ck/a?!&&p=a904cbc53c56e106JmltdHM9MTcwNzE3NzYwMCZpZ3VpZD0wM2IxNzA5Ny05YjQyLTZlYTQtMjJlOC02MmQzOWFlYTZmODAmaW5zaWQ9NTI2MQ&ptn=3&ver=2&hsh=3&fclid=03b17097-9b42-6ea4-22e8-62d39aea6f80&psq=gaya+bihar&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvR2F5YV8oSW5kaWEp&ntb=1" class="btn btn-primary">Learn More</a>
+                            <a href="https://www.bing.com/aclk?ld=e8zL8fbFR7wdlkRK2qCzfb9zVUCUx9ZiPAcy3mbteqjO6MYD-sb32qGJDzYibqEkH-_TpoIpTcsGFWIOOTY8HlxQL3i-a1BBsSh1DhyrKo_X8ePjkBuFxqqJza1WUN-TL0M_TRYu2CFvBZDPT-v44EWseKv6L0AN-jnntAheO8g488n9IYggAvOYV5N7MqxYWUmn10jw&u=aHR0cHMlM2ElMmYlMmZ3d3cudHJpcGFkdmlzb3IuaW4lMmZTbWFydERlYWxzJTNmZ2VvJTNkNzM0NDU2JTI2bSUzZDE0NzQ4JTI2c3VwY20lM2QxMTA3MTgxMDYlMjZzdXBhZyUzZDE1Njg4OTUyNjMlMjZzdXB0aSUzZGt3ZC03NjQ4NTE2NzAwMTg0NCUzYWxvYy05MCUyNnN1cGFpJTNkODMwODIyMTkxNjk4NzYlMjZzdXBkdiUzZGMlMjZzdXBudCUzZG8lMjZzdXBrdyUzZGdheWElMjUyMGJpaGFyJTI2bXNjbGtpZCUzZGQ2ZTFiODg1NjIxYTE5Y2Q3NWVjZGQ0NjZmYzY0Y2Ex&rlid=d6e1b885621a19cd75ecdd466fc64ca1&ntb=1" class="btn btn-primary">To Book</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card image-card">
+                        <img src="amberfort.jpeg" class="card-img-top" alt="Image 2">
+                        <div class="card-body">
+                            <h4>2.Jaipur's Amber Fort, Rajasthan:</h4>
+                            <p class="card-text">Imposing and grand, the Amber Fort in Jaipur is a blend of Hindu and Mughal architecture. Perched on a hilltop, it offers breathtaking views of the surrounding landscape. Explore its palaces, courtyards, and intricate artwork, and immerse yourself in the rich history of Rajasthan.</p>
+                            <a href="https://www.bing.com/ck/a?!&&p=16f053f5dc9e8e00JmltdHM9MTcwNzE3NzYwMCZpZ3VpZD0wM2IxNzA5Ny05YjQyLTZlYTQtMjJlOC02MmQzOWFlYTZmODAmaW5zaWQ9NTI1NA&ptn=3&ver=2&hsh=3&fclid=03b17097-9b42-6ea4-22e8-62d39aea6f80&psq=Jaipur%27s+Amber+Fort%2c+Rajasthan%3a&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvQW1iZXJfRm9ydA&ntb=1" class="btn btn-primary">Learn More</a>
+                            <a href="https://www.bing.com/aclk?ld=e8t6R7spT8U_yDrzb8m-EWeTVUCUyu2ympsKinJ9hPTsabcAFktSKg1pxJeytK8hJZOWdsRcINnHbde1PVMaqCsuewjQmQvmYpiBFHsSxWEn_QbZs5-JaDhKZQrOefR60J0qVerP4LT-fQM1MsJY-enD99zCh02OmqtkOwkZ0VqzzvVf63OY0iq2q1f1gistO2mOUvPA&u=aHR0cHMlM2ElMmYlMmZ3d3cudHJpcGFkdmlzb3IuY29tJTJmQXR0cmFjdGlvbl9SZXZpZXctZzMwNDU1NS1kMjAyMjM3OTktUmV2aWV3cy1BbWJlcl9mb3J0LUphaXB1cl9KYWlwdXJfRGlzdHJpY3RfUmFqYXN0aGFuLmh0bWwlM2ZtJTNkMTU0MzIlMjZzdXBiayUzZDAlMjZzdXBrbCUzZGtsJTI2c3VwY20lM2Q3NTgwMDA0MzclMjZzdXBhZyUzZDEyNzQzMzU2MjMyMTk0MjElMjZzdXB0aSUzZGRhdC0yMzMxNDQ1Njg3Nzg2NTg4JTI2c3VwYWklM2Q3OTY0NjA4MTM1NTc4OSUyNnN1cGR2JTNkYyUyNnN1cG50JTNkbyUyNnN1cGt3JTNkSmFpcHVyJTI3cyUyNTIwQW1iZXIlMjUyMEZvcnQlMmMlMjUyMFJhamFzdGhhbiUyNTNBJTI2bXNjbGtpZCUzZGIyOWQ2NzA1OTY3NjE4ZjIwYzYyMDJjNjlkNGYzM2Q3&rlid=b29d6705967618f20c6202c69d4f33d7&ntb=1" class="btn btn-primary">To Book</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card image-card">
+                        <img src="kerala.jpg" class="card-img-top" alt="Image 3">
+                        <div class="card-body">
+                            <h4>3.Kerala's Backwaters:</h4>
+                            <p class="card-text">Kerala's backwaters offer a tranquil escape into nature's lap. Glide along the serene waterways on a traditional houseboat, surrounded by lush greenery and coconut groves. Experience the laid-back charm of Kerala's villages and witness life along the water's edge.</p>
+                            <a href="https://www.bing.com/ck/a?!&&p=3a0abd79f4d0a4a7JmltdHM9MTcwNzE3NzYwMCZpZ3VpZD0wM2IxNzA5Ny05YjQyLTZlYTQtMjJlOC02MmQzOWFlYTZmODAmaW5zaWQ9NTI2Mw&ptn=3&ver=2&hsh=3&fclid=03b17097-9b42-6ea4-22e8-62d39aea6f80&psq=Kerala%27s+Backwaters%3a&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvS2VyYWxhX2JhY2t3YXRlcnM&ntb=1" class="btn btn-primary">Learn More</a>
+                            <a href="https://www.bing.com/aclk?ld=e8G7ROJIPgBzm_QvYk5Lx-KDVUCUydzRfg-6Zn_zvVCQ2vXEQdhm40cAa57VZbcR6AuEAauBQkY-yp2XJKuYA4NqrPFK0g0iJ-hKC1YqWptcM62bG-ipr8SCpxWHO6BUgkhu3FCRHU3_RINpX8qq7RUg6fv93t_jmFXzC-kx1yd65kWEY9RF1nL7uTnNdPH5EGmI4EyA&u=aHR0cHMlM2ElMmYlMmZ3d3cuYWdvZGEuY29tJTJmZW4taW4lMmZwYWdlcyUyZmFnb2RhJTJmZGVmYXVsdCUyZkRlc3RpbmF0aW9uU2VhcmNoUmVzdWx0LmFzcHglM2ZjaXR5JTNkMTQzODIlMjZzaXRlX2lkJTNkMTkxNDkzNiUyNnRhZyUzZDI0ZjU4YjBkLWYyOTEtNGE5Mi05OTczLTEwYmJlZjczMzBkYyUyNm1zY2xraWQlM2Q0ZThmNGM4N2EwZmIxNzZkZjlkNDI5NDRhZmRjZWI1Ng&rlid=4e8f4c87a0fb176df9d42944afdceb56&ntb=1" class="btn btn-primary">To Book</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card image-card">
+                        <img src="ladakh.jpeg" class="card-img-top" alt="Image 4">
+                        <div class="card-body">
+                            <h4>4.Leh-Ladakh, Jammu and Kashmir:</h4>
+                            <p class="card-text">Nestled amidst the Himalayas, Leh-Ladakh is a paradise for adventure enthusiasts and nature lovers alike. Marvel at its breathtaking landscapes, from rugged mountains to crystal-clear lakes. Explore Buddhist monasteries, go trekking in the Himalayan wilderness, and soak in the serenity of this remote region.</p>
+                            <a href="https://www.bing.com/ck/a?!&&p=098d0a5abd91a731JmltdHM9MTcwNzE3NzYwMCZpZ3VpZD0wM2IxNzA5Ny05YjQyLTZlYTQtMjJlOC02MmQzOWFlYTZmODAmaW5zaWQ9NTI0NQ&ptn=3&ver=2&hsh=3&fclid=03b17097-9b42-6ea4-22e8-62d39aea6f80&psq=Leh-Ladakh%2c+Jammu+and+Kashmir%3a&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvTGVo&ntb=1" class="btn btn-primary">Learn More</a>
+                            <a href="https://www.bing.com/ck/a?!&&p=896a207d719703d4JmltdHM9MTcwNzE3NzYwMCZpZ3VpZD0wM2IxNzA5Ny05YjQyLTZlYTQtMjJlOC02MmQzOWFlYTZmODAmaW5zaWQ9NTIzOQ&ptn=3&ver=2&hsh=3&fclid=03b17097-9b42-6ea4-22e8-62d39aea6f80&psq=Leh-Ladakh%2c+Jammu+and+Kashmir%3a+tou&u=a1aHR0cHM6Ly93d3cubGVobGFkYWtoaW5kaWEuY29tL3BhY2thZ2VzL2Vzc2VuY2Utb2Yta2FzaG1pci1hbmQtbGFkYWtoLw&ntb=1" class="btn btn-primary">To Book</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card image-card">
+                        <img src="goa.jpeg" class="card-img-top" alt="Image 5">
+                        <div class="card-body">
+                            <h4>5.Goa's Beaches:</h4>
+                            <p class="card-text">Goa's sun-kissed beaches are synonymous with relaxation and fun. Whether you seek vibrant nightlife, water sports, or simply a quiet retreat by the sea, Goa has something for everyone. Explore its golden sands, vibrant markets, and Portuguese-influenced architecture</p>
+                            <a href="https://www.bing.com/ck/a?!&&p=2f573ace24bf4a13JmltdHM9MTcwNzE3NzYwMCZpZ3VpZD0wM2IxNzA5Ny05YjQyLTZlYTQtMjJlOC02MmQzOWFlYTZmODAmaW5zaWQ9NTI1MA&ptn=3&ver=2&hsh=3&fclid=03b17097-9b42-6ea4-22e8-62d39aea6f80&psq=Goa%27s+Beaches%3a+wikepedia&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvR29h&ntb=1" class="btn btn-primary">Learn More</a>
+                            <a href="https://www.bing.com/aclk?ld=e8SKKW8b22TaFQ-cdakYpwIjVUCUy4ai5QMHrqQq6jOdc0LUEVgUVAmEOFrxNU3kNyxp3Vb-JJweFti40W8bo54c0boZfEG0idGbnEEBkbp95277W20otl1xqZVzd4YHVtCtDbPrikX_cYA71IKrDMBJunxjllrWXlsC1aNE0DCcvJwTAY2sDoF6r4bZRHECRqnffTbg&u=aHR0cHMlM2ElMmYlMmZ3d3cudHJpcGFkdmlzb3IuY29tJTJmVmFjYXRpb25SZW50YWxzLWcyOTc2MDQlM2ZtJTNkMjAzNDYlMjZzdXBjaSUzZDEzMjIzMzYzMDUlMjZzdXBhZyUzZDQxNjI0MDE3MjklMjZzdXBhaSUzZDgxMDIwMjc4OTM3MjgxJTI2c3VwZHYlM2RjJTI2c3VwbnQlM2RvJTI2c3Vwa3clM2Rnb2ElMjdzJTI1MjBiZWFjaGVzJTI1MjB3aWtpcGVkaWElMjZzdXBzYyUzZGt3ZC0yNTM1Nzg2NzI5MyUyNnN1cHRpJTNka3dkLTI1MzU3ODY3MjkzJTI2c3VwbHAlM2QxNTYzMTQlMjZzdXBsaSUzZDE2NTUlMjZtc2Nsa2lkJTNkZDliZTZjNDM2MTI4MTMwMjRjMDkwOTgwNzEwZDE5OTU&rlid=d9be6c43612813024c090980710d1995&ntb=1" class="btn btn-primary">To Book</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card image-card">
+                        <img src="varanasi.jpeg" class="card-img-top" alt="Image 6">
+                        <div class="card-body">
+                            <h4>6.Varanasi, Uttar Pradesh:</h4>
+                            <p class="card-text">Varanasi, the spiritual heart of India, is a city of ancient temples, ghats, and rituals. Experience the mesmerizing Ganga Aarti ceremony on the ghats of the sacred Ganges River, stroll through narrow alleys filled with bustling markets, and immerse yourself in the city's spiritual aura.</p>
+                            <a href="https://www.bing.com/ck/a?!&&p=5bd936b6e7f99cb1JmltdHM9MTcwNzE3NzYwMCZpZ3VpZD0wM2IxNzA5Ny05YjQyLTZlYTQtMjJlOC02MmQzOWFlYTZmODAmaW5zaWQ9NTI1NA&ptn=3&ver=2&hsh=3&fclid=03b17097-9b42-6ea4-22e8-62d39aea6f80&psq=Varanasi%2c+Uttar+Pradesh%3a&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvVmFyYW5hc2k&ntb=1" class="btn btn-primary">Learn More</a>
+                            <a href="https://www.bing.com/aclk?ld=e84Sb3D4IdAjp-Qlm8bxvpVjVUCUwRQALfI7sx_zf8tPjbgBO2GLzUlYYvdOXppUWNEuD0CY6FfKOxBnfteWD-CdXVpfSCt2cselL15CVVuIPjXZk0ma5LDXVqXy_agmGsVa30HD3tNXralw6WHAeThHghOOMqlYzG06MCndI0r6cGRlHnleKcCghsil4EazgvBeh_jQ&u=aHR0cCUzYSUyZiUyZnd3dy5ib29raW5nLmNvbSUyZmNpdHklMmZpbiUyZmJlbmFyZXMuZW4uaHRtbCUzZmFpZCUzZDM2NzI5NSUyNmxhYmVsJTNkbXNuLTVWMkFEd2tZcGxOKkphYVRrN3hKRnctNzk4NTIwNDUzNzA3MDUlM2F0aWt3ZC0xNzI2NDUzMDQ4MCUzYWxvYy05MCUzYW5lbyUzYW10ZSUzYWxwMTU2MzE0JTNhZGVjJTNhcXNWYXJhbmFzaSUyYyUyNTIwVXR0YXIlMjUyMFByYWRlc2glMjUzQSUyNnV0bV9jYW1wYWlnbiUzZEluZGlhJTI2dXRtX21lZGl1bSUzZGNwYyUyNnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX3Rlcm0lM2Q1VjJBRHdrWXBsTipKYWFUazd4SkZ3JTI2bXNjbGtpZCUzZGE0OGZmMmU0ZDE2NzFhYTgzYzA4OTcyN2RkY2I3ZGMx&rlid=a48ff2e4d1671aa83c089727ddcb7dc1&ntb=1" class="btn btn-primary">To Book</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <div class="cultural-info">
+            <h1>Cultural Experience in India</h1>
+            <img src="cultural.jpeg" alt="Cultural Image">
+            <p>India offers a rich cultural heritage with diverse traditions, festivals, and cuisines. Experience the vibrant colors of Indian festivals, explore ancient temples and monuments, and indulge in delicious Indian cuisine.
+            Discover the beauty of Indian classical dances, traditional music, and art forms that have been passed down through generations.</p>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4>Spiritual Immersion:</h4>
+                        <ul>
+                            <li>Ultimate Yoga Retreat: Combine daily Hatha and Vinyasa yoga sessions with Ayurveda treatments, meditation workshops, and cultural excursions in Rishikesh.</li>
+                            <li>Temple Trail Pilgrimage: Embark on a guided journey through iconic temples of South India, including Madurai Meenakshi Amman Temple, Thanjavur Brihadeeswarar Temple, and Rameshwaram Ramanathaswamy Temple.</li>
+                            <li>Himalayan Buddhist Monastery Stay: Experience tranquil life in a Ladakh monastery, participate in chanting sessions, and learn about Tibetan Buddhism, culminating in a breathtaking trek to Pangong Tso.</li>
+                            <li>Ganga Aarti Ceremony in Varanasi: Witness the mesmerizing evening prayer ritual on the Ganges, offering diyas and chanting hymns, soaking in the spiritual atmosphere.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4>Art & Heritage:</h4>
+                        <li>Craft Your Culture: Learn the art of Warli painting in Maharashtra, intricate Meenakari work in Rajasthan, or block printing in Gujarat, taking home a personalized souvenir.</li>
+                        <li>Dance Like a Local: Immerse yourself in diverse classical dance forms like Kathakali in Kerala, Odissi in Odisha, or Bharatanatyam in Tamil Nadu, attending workshops and witnessing live performances.</li>
+                        <li>Foodie's Heritage Walk: Explore Delhi's Chandni Chowk or Jaipur's Johri Bazaar, savoring street food while uncovering historical landmarks and interacting with local artisans.</li>
+                        <li>Museum Marathon: Embark on a curated museum tour in Kolkata, covering the Indian Museum, Victoria Memorial, and Tagore's ancestral home, exploring India's rich history and cultural icons.</li>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4>Festivals & Celebrations:</h4>
+                        <li>Holi Splash: Join the vibrant Holi festival in Mathura, Vrindavan, or Udaipur, experiencing the colorful paint fight, traditional dances, and community spirit.</li>
+                        <li>Diwali Illuminations: Celebrate the "Festival of Lights" in Amritsar, witnessing the Golden Temple adorned with diyas, enjoying festive markets, and sharing traditional sweets.</li>
+                        <li>Durga Puja Festivities: Immerse yourself in the cultural extravaganza of Durga Puja in Kolkata, marveling at elaborate pandals, witnessing traditional rituals, and enjoying cultural performances.</li>
+                        <li>Elephant Festival in Jaipur: Attend the unique and colorful elephant festival in Jaipur, witnessing their decorated outfits, ceremonial processions, and exciting polo matches.</li>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4>Food & Cuisine:</h4>
+                        <li>Spice Up Your Life: Take a culinary tour in Kerala, learning about spices and their uses, visiting local markets, and enjoying a home-cooked meal with a family.</li>
+                        <li>Mastering Masala Dosa: Participate in a cooking class in Chennai, learning the art of preparing the South Indian staple, Masala Dosa, and other local delicacies.</li>
+                        <li>Mastering Masala Dosa: Participate in a cooking class in Chennai, learning the art of preparing the South Indian staple, Masala Dosa, and other local delicacies.</li>
+                        <li>Royal Dining Experience: Enjoy a traditional "thali" meal at a heritage Haveli in Rajasthan, sampling diverse regional dishes while experiencing warm hospitality.</li>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4>Village Homestays:</h4>
+                        <li>Organic Farm Stay in Goa: Participate in daily farm activities, learn about sustainable agriculture, and savor fresh-from-the-farm meals in a traditional Goan homestay.</li>
+                        <li>Himalayan Homestay Trek: Trek through the scenic villages of Himachal Pradesh, staying in homestays and experiencing local customs, food, and breathtaking views.</li>
+                        <li>Tea Plantation Homestay in Munnar: Immerse yourself in the lush tea plantations of Kerala, witnessing tea plucking, processing, and enjoying authentic home-cooked meals.
+                        </li>
+                        <li>Desert Village Homestay in Rajasthan: Experience the unique Thar Desert culture by staying in a homestay, participating in camel safaris, and enjoying traditional folk music and dance performances.</li>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4>Wildlife & Nature:</h4>
+                        <li>Tiger Safari in Ranthambore National Park: Embark on a jeep safari in search of the majestic Bengal tigers, exploring diverse wildlife and the park's rich biodiversity</li>
+                        <li>Himalayan Birdwatching Adventure: Hike through the diverse habitats of the Himalayas, spotting colorful birds like the Himalayan Monal, Golden Eagle, and Snow Pigeon.</li>
+                        <li>Backpacking in Munnar: Trek through the rolling hills and tea plantations of Munnar, encountering waterfalls, wildlife, and breathtaking landscapes</li>
+                        <li>Boat Trip in Kerala Backwaters: Cruise through the serene backwaters of Kerala, spotting diverse birdlife, exploring local villages, and enjoying a unique rural experience.</li>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div class="container">
+        <h5>
+        <p>Planning a trip to India? Here are some practical travel tips to help you make the most of your journey:</p>
+    </h5> <ul>
+            <li>Visa Requirements: Check the visa requirements for your country and apply for the appropriate visa well in advance. <a href="https://www.bing.com/ck/a?!&&p=70324e15dd178216JmltdHM9MTcwNzI2NDAwMCZpZ3VpZD0wM2IxNzA5Ny05YjQyLTZlYTQtMjJlOC02MmQzOWFlYTZmODAmaW5zaWQ9NTIzMQ&ptn=3&ver=2&hsh=3&fclid=03b17097-9b42-6ea4-22e8-62d39aea6f80&psq=Visa+Requirements+in+india&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvVmlzYV9yZXF1aXJlbWVudHNfZm9yX0luZGlhbl9jaXRpemVucw&ntb=1">For More</a></li>
+            <li>Health Precautions: Consult your doctor for any recommended vaccinations and pack necessary medications for your trip.<a href="https://www.bing.com/ck/a?!&&p=1c7d465177247704JmltdHM9MTcwNzI2NDAwMCZpZ3VpZD0wM2IxNzA5Ny05YjQyLTZlYTQtMjJlOC02MmQzOWFlYTZmODAmaW5zaWQ9NTIxMg&ptn=3&ver=2&hsh=3&fclid=03b17097-9b42-6ea4-22e8-62d39aea6f80&psq=Health+Precautionsin+india+while+traveling&u=a1aHR0cHM6Ly9tYW5haG90ZWxzLmluL3RyYXZlbGxlci90b3BsaXN0cy9oZWFsdGgtcHJlY2F1dGlvbnMtaW5kaWEuaHRtbA&ntb=1">For More</a></li>
+            <li>Weather Considerations: India has diverse climates, so pack accordingly based on the region and time of year you're visiting.<a href="https://www.bing.com/ck/a?!&&p=114d8221889cf54cJmltdHM9MTcwNzI2NDAwMCZpZ3VpZD0wM2IxNzA5Ny05YjQyLTZlYTQtMjJlOC02MmQzOWFlYTZmODAmaW5zaWQ9NTMwNA&ptn=3&ver=2&hsh=3&fclid=03b17097-9b42-6ea4-22e8-62d39aea6f80&psq=Weather+Considerations+in+india+while+traveling&u=a1aHR0cHM6Ly93d3cudHJpcGNyYWZ0ZXJzLmNvbS90cmF2ZWwvaW5kaWEtd2VhdGhlci1hbmQtYmVzdC10aW1lLXRvLXZpc2l0LWluZGlh&ntb=1">For More</a></li>
+            <li>Currency and Banking: Familiarize yourself with the local currency and banking facilities available, including ATMs and currency exchange.<a href="https://www.bing.com/ck/a?!&&p=ab9c59a1b384c3f9JmltdHM9MTcwNzI2NDAwMCZpZ3VpZD0wM2IxNzA5Ny05YjQyLTZlYTQtMjJlOC02MmQzOWFlYTZmODAmaW5zaWQ9NTMwMg&ptn=3&ver=2&hsh=3&fclid=03b17097-9b42-6ea4-22e8-62d39aea6f80&psq=Currency+and+Banking+in+india+while+traveling&u=a1aHR0cHM6Ly93aXNlLmNvbS9nYi90cmF2ZWwtbW9uZXkvaW5kaWFuLWN1cnJlbmN5&ntb=1">For More</a></li>
+            <li>Language: English is widely spoken, but learning a few basic phrases in Hindi or the local language can enhance your travel experience.<a href="https://www.bing.com/ck/a?!&&p=a7f09950ef4d44bbJmltdHM9MTcwNzI2NDAwMCZpZ3VpZD0wM2IxNzA5Ny05YjQyLTZlYTQtMjJlOC02MmQzOWFlYTZmODAmaW5zaWQ9NTIzOA&ptn=3&ver=2&hsh=3&fclid=03b17097-9b42-6ea4-22e8-62d39aea6f80&psq=Language+in+india+&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvTGFuZ3VhZ2VzX29mX0luZGlh&ntb=1">For More</a></li>
+            <li>Cultural Etiquette: Respect local customs and traditions, including dress codes for religious sites and greeting customs<a href="https://www.bing.com/ck/a?!&&p=96387c7b76ed13baJmltdHM9MTcwNzI2NDAwMCZpZ3VpZD0wM2IxNzA5Ny05YjQyLTZlYTQtMjJlOC02MmQzOWFlYTZmODAmaW5zaWQ9NTI1Mg&ptn=3&ver=2&hsh=3&fclid=03b17097-9b42-6ea4-22e8-62d39aea6f80&psq=Cultural+Etiquette+in+india&u=a1aHR0cHM6Ly93d3cucm91Z2hndWlkZXMuY29tL2luZGlhL2N1bHR1cmUtZXRpcXVldHRlLw&ntb=1">For More</a>.</li>
+        </ul>
+        <p style="font-size: large;" ><b>By planning ahead and being informed, you can ensure a smooth and enjoyable travel experience in India.</b></p>
+    </div>
+
+<!-- feedback -->
+    <section>
+        <div class="feedback-form">
+            <h2>Leave Your Feedback</h2>
+            <form action="https://api.web3forms.com/submit" method="post">
+                <input type="hidden" name="access_key" value="f1737702-28fb-47df-a55c-2bec9d1ee02c">
+
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="feedback">Feedback:</label>
+                    <textarea id="feedback" name="feedback" required></textarea>
+                </div>
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </div>
+    </section>
+</section>
+
+<footer class="bg-dark text-light py-5" >
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h4>Contact Us</h4>
+                <p>
+                    Eco-Conscious Travel India<br>
+                    Contact Address:123, Main Street<br>
+                    Boring Road<br>
+                    patna, bihar, 800002<br>
+                    India
+                </p>
+                <p>
+                    Phone Number:<br>
+                    <a href="tel:+91 8585858585">+91 8585858585</a><br>
+                    <a href="tel:+91 8585858589">+91 8585858589</a>
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h4>Connect</h4>
+                <a href="mailto:pwskills.ca@gmail.com"><img src="gmail_logo.png" alt="Gmail"  width="30" height="30"></a>
+                <a href="https://www.facebook.com/profile.php?id=100069759655054&mibextid=ZbWKwL"><img src="fb_logo.png" alt="Facebook"  width="30" height="30"></a>
+                <a href="https://www.facebook.com/profile.php?id=100069759655054&mibextid=ZbWKwL"><img src="x_logo.png" alt="Twitter" width="30" height="30"></a>
+                
+            </div>
+            <div class="col-md-4">
+                <h4>Map</h4>
+                <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57570.22493985296!2d85.0779132066521!3d25.60029502787273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed585ca49ba17b%3A0x7fea4825391451c7!2sSuvidha%20Tour%20And%20Travels%20%7C%20Taxi%20Service%20%7C%20Car%20Rental%20Agency!5e0!3m2!1sen!2sin!4v1707288346375!5m2!1sen!2sin" width="800" height="350" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <h4>Brochures</h4>
+                <a href="https://www.maxholidays.com/brochures" >view Brochures</a>
+                
+            </div>
+            <div class="col-md-4">
+                <h4>Blog</h4>
+                <a href="https://www.bing.com/ck/a?!&&p=ac3b388cd2ea8210JmltdHM9MTcwNzE3NzYwMCZpZ3VpZD0wM2IxNzA5Ny05YjQyLTZlYTQtMjJlOC02MmQzOWFlYTZmODAmaW5zaWQ9NTIyMA&ptn=3&ver=2&hsh=3&fclid=03b17097-9b42-6ea4-22e8-62d39aea6f80&psq=blog+on+india+toruism&u=a1aHR0cHM6Ly93d3cuaW5kaXRhbGVzLmNvbS8&ntb=1">Visit Our Blog</a>
+            </div>
+            
+        <div class="row">
+            <div class="col-md-6">
+                <p><a href="privacy_policy.html">Privacy Policy</a></p>
+            </div>
+            <div class="col-md-6">
+                <p><a href="terms_of_service.html">Terms of Service</a></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h4>Tailored For Tourism:</h4>
+                <ul>
+                    <li><a href="https://www.bing.com/ck/a?!&&p=8caf92d4c3c6fa60JmltdHM9MTcwNzE3NzYwMCZpZ3VpZD0wM2IxNzA5Ny05YjQyLTZlYTQtMjJlOC02MmQzOWFlYTZmODAmaW5zaWQ9NTUwMQ&ptn=3&ver=2&hsh=3&fclid=03b17097-9b42-6ea4-22e8-62d39aea6f80&psq=Emergency+Contact+Information%3a+while+traveeling+in+india&u=a1aHR0cHM6Ly95b3VycGxhdGZvcm0uaW4vZW1lcmdlbmN5LWNvbnRhY3QtbnVtYmVycy10by1rZWVwLWJ5LXlvdXItc2lkZS13aGlsZS10cmF2ZWxsaW5nLyM6fjp0ZXh0PUVtZXJnZW5jeSUyMGNvbnRhY3QlMjBudW1iZXJzJTIwdG8lMjBrZWVwJTIwYnklMjB5b3VyJTIwc2lkZSwxMDkxJTIwOCUyMEFpciUyMEFtYnVsYW5jZSUyMCVFMiU4MCU5MyUyMDk1NDAxNjEzNDQlMjBNb3JlJTIwaXRlbXM&ntb=1">Emergency Contact Information</a></li>
+                    <li><a href="https://www.bing.com/ck/a?!&&p=d8c475fe074c0a8aJmltdHM9MTcwNzE3NzYwMCZpZ3VpZD0wM2IxNzA5Ny05YjQyLTZlYTQtMjJlOC02MmQzOWFlYTZmODAmaW5zaWQ9NTIyMQ&ptn=3&ver=2&hsh=3&fclid=03b17097-9b42-6ea4-22e8-62d39aea6f80&psq=Visa+and+Travel+Information%3awhile+traveeling+in+india&u=a1aHR0cHM6Ly90cmF2ZWwuc3RhdGUuZ292L2NvbnRlbnQvdHJhdmVsL2VuL2ludGVybmF0aW9uYWwtdHJhdmVsL0ludGVybmF0aW9uYWwtVHJhdmVsLUNvdW50cnktSW5mb3JtYXRpb24tUGFnZXMvSW5kaWEuaHRtbA&ntb=1">Visa and Travel Information</a></li>
+                    <li><a href="https://www.bing.com/ck/a?!&&p=88e01861e294db97JmltdHM9MTcwNzE3NzYwMCZpZ3VpZD0wM2IxNzA5Ny05YjQyLTZlYTQtMjJlOC02MmQzOWFlYTZmODAmaW5zaWQ9NTI0OQ&ptn=3&ver=2&hsh=3&fclid=03b17097-9b42-6ea4-22e8-62d39aea6f80&psq=Local+Currency+Converter%3awhile+traveeling+in+india&u=a1aHR0cHM6Ly9oaXBwaWUtaW5oZWVscy5jb20vbW9uZXktaW4taW5kaWEtdHJhdmVsaW5nLXdpdGgtcnVwZWVzLw&ntb=1">Local Currency Converter</a></li>
+                    <li><a href="https://www.bing.com/ck/a?!&&p=a569e187b40f9820JmltdHM9MTcwNzE3NzYwMCZpZ3VpZD0wM2IxNzA5Ny05YjQyLTZlYTQtMjJlOC02MmQzOWFlYTZmODAmaW5zaWQ9NTI0MA&ptn=3&ver=2&hsh=3&fclid=03b17097-9b42-6ea4-22e8-62d39aea6f80&psq=Multilingual+Support%3awhile+traveeling+in+india&u=a1aHR0cHM6Ly93d3cuZW9pbWFkcmlkLmdvdi5pbi9wZGYvTXVsdGlsaW5ndWFsLVRvdXJpc3QtSGVscGxpbmUucGRm&ntb=1">Multilingual Support</a></li>
+                    <li><a href="https://incredibleindia.org/">Incredible India Website </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
